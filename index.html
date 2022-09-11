@@ -63,9 +63,22 @@
 <div class="w3-container">
         
     <div class="w3-panel">
+
         <div class="w3-container w3-cell w3-cell-middle">
             <a href="https://mathieudupont.github.io/A22-905/420905_aide_memoire.pdf" class="w3-button w3-green w3-round" target="_blank">Aide-mémoire</a>
         </div>
+
+        <div onclick="accordeon('bug')" class="w3-container w3-cell w3-cell-middle w3-button w3-orange w3-round">
+            PROCÉDURE DE DÉBOGAGE (ou comment trouver votre bogue!)
+        </div>
+        <ul id="bug" class="w3-ul w3-panel w3-round w3-hide">
+            <li>1- <b>Ouvrir la console.</b></li>
+            <li>2- <b>Lire les messages d'erreur dans la console</b> : s'ils mentionnent une ligne spécifique problématique de votre code, aller voir cette ligne dans votre code.</li>
+            <li>3- <b>Vérifier l'écouteur</b> : Mettre un <b><code>console.log()</code></b> dans la fonction appelée par l'écouteur et vérifier si ça s'affiche bien dans la console lorsque l'évènement écouté se produit.</li>
+            <li>4- <b>Appeler la fonction dans la console</b> et vérifier si elle produit bien l'effet désiré.</li>
+            <li>5- <b>Vérifier si l'état d'une variable globale change</b> : mettre des <b><code>console.log()</code></b> avant et après la modification de la variable.</li>
+        </ul>
+
     </div>
 
     <!-- <a class="w3-button w3-block w3-left-align w3-dark-grey" href="https://mathieudupont.github.io/A22-905/420905_aide_memoire.pdf" target="_blank">
