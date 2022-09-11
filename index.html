@@ -68,15 +68,16 @@
             <a href="https://mathieudupont.github.io/A22-905/420905_aide_memoire.pdf" class="w3-button w3-green w3-round" target="_blank">Aide-mémoire</a>
         </div>
 
-        <div onclick="accordeon('bug')" class="w3-container w3-cell w3-cell-middle w3-button w3-orange w3-round">
-            PROCÉDURE DE DÉBOGAGE (ou comment trouver votre bogue!)
+        <div onclick="accordeon('bug')" class="w3-container w3-cell w3-cell-middle w3-button w3-red w3-round">
+            Procédure de débogage (ou « MON CODE NE FONCTIONNE PAS! »)
         </div>
         <ul id="bug" class="w3-ul w3-panel w3-round w3-hide">
-            <li><b>1 -Ouvrir la console.</b></li>
-            <li><b>2- Lire les messages d'erreur dans la console</b> : s'ils mentionnent une ligne spécifique problématique de votre code, aller voir cette ligne dans votre code.</li>
-            <li><b>3- Vérifier l'écouteur</b> : Mettre un <b><code>console.log()</code></b> dans la fonction appelée par l'écouteur et vérifier si ça s'affiche bien dans la console lorsque l'évènement écouté se produit.</li>
-            <li><b>4- Appeler la fonction dans la console</b> et vérifier si elle produit bien l'effet désiré.</li>
-            <li><b>5- Vérifier si l'état d'une variable globale change</b> : mettre des <b><code>console.log()</code></b> avant et après la modification de la variable.</li>
+            <li><b>1- Ne pas paniquer.</b></li>
+            <li><b>2- Ouvrir la console.</b></li>
+            <li><b>3- Lire les messages d'erreur dans la console</b> : s'ils mentionnent une ligne spécifique problématique de votre code, aller voir cette ligne dans votre code.</li>
+            <li><b>4- Vérifier l'écouteur</b> : Mettre un <b><code>console.log()</code></b> dans la fonction appelée par l'écouteur et vérifier si ça s'affiche bien dans la console lorsque l'évènement écouté se produit.</li>
+            <li><b>5- Appeler la fonction dans la console</b> et vérifier si elle produit bien l'effet désiré.</li>
+            <li><b>6- Vérifier si l'état d'une variable globale change</b> : mettre des <b><code>console.log()</code></b> avant et après la modification de la variable.</li>
         </ul>
 
     </div>
